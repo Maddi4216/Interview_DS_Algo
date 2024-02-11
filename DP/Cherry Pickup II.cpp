@@ -264,7 +264,7 @@ class Solution {
         int n = grid[0].length;
 
         int[][] prev = new int[n][n];
-        t[0][n - 1] = (n == 1) ? grid[0][0] : grid[0][0] + grid[0][n - 1];
+        perv[0][n - 1] = (n == 1) ? grid[0][0] : grid[0][0] + grid[0][n - 1];
         
         for (int row = 1; row < m; row++) { // row = 0 --> let's first prepare the prev from the 1st row
 
